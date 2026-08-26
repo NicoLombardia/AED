@@ -1,0 +1,17 @@
+# Ejecutables compilados
+Div
+Mcd
+Factorial
+Fibonacci
+Frase
+Rec
+Svg
+*.exe
+*.o
+*.out
+
+# Archivos generados por el programa
+fractal.svg
+
+# VS Code
+.vscode/
