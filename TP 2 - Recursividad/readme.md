@@ -1,4 +1,4 @@
-# DD-Recur
+# TP 2 - RECURSIVIDAD
 
 Trabajo Práctico #10 — Funciones Recursivas con Operador Condicional
 
@@ -45,18 +45,3 @@ Si ningún `assert` falla, el programa termina sin imprimir nada
 
 `Svg.cpp` además genera un archivo `fractal.svg` con un Triángulo de
 Sierpinski de 5 niveles de recursión.
-
-## Notas de diseño
-
-- **`Fact`** usa `unsigned long` porque el factorial crece muy rápido y
-  desborda un `int`/`unsigned` a partir de valores relativamente chicos
-  (ver Fact(13) en adelante).
-- **`Fib`** es doblemente recursiva: dentro de su propia definición se
-  invoca a sí misma dos veces (`Fib(n-1)` y `Fib(n-2)`).
-- **`Mcd`** implementa el algoritmo de Euclides recursivo [PINEIRO].
-- **`Sierpinski`** (crédito extra) genera el fractal como una cadena de
-  elementos `<polygon>` SVG, dividiendo recursivamente cada triángulo en
-  3 triángulos de la mitad del tamaño (se descarta el triángulo central).
-  Se agrega una función auxiliar `NumTriangulos(n) = 3^n` para poder
-  verificar con `assert` que la cantidad de triángulos generados en cada
-  nivel de recursión es la esperada.
